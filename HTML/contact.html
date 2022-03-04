@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contact</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+<!--Alert Box-->
+	<div class="login-container">
+		<div class="success" id="successContact">
+			Thank You For Your Feedback, We will Look into it.
+		</div>
+	</div>
+
+	<div class="login-container">
+		<div class="error" id="errContact">
+			Email & Reason Field Required ! 
+		</div>
+	</div>
+
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<a href="./index.html"><img src="../images/logo.png" alt="Elbes E-commerce" class="logo"></a>
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="./index.html">Home</a></li>
+						<li><a href="./products.html">Products</a></li>
+						<li><a href="./index.html#about">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="./login.html">Account</a></li>
+					</ul>
+				</nav>
+				<a href="./cart.html"><i class="fa fa-shopping-cart carty"></i></a>
+				<img src="../images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+			</div>
+		</div>
+	</div>
+
+	<!--Background & info-->
+	<div class="detail-container">
+		<div class="contactBackground">
+			<div class="contactForm">
+				<h2>How Can We Help?</h2>
+				We are always open for buisness. If you can't find the answer <br> you're looking for, we're here to lend a hand.
+				<h3>Warehouse Location</h3>
+				<p> 20 Queen Road <br> Kitchener, Canada <br> SN079914 </p>
+				<h3>Contact Information</h3>
+				<p><strong>Phone :</strong> 1 (500) 632-9741</p>
+				<p><strong>Technical Problems : </strong>technicalsupport@gmail.com</p>
+				<p><strong>Sales : </strong> salesTeam101@gmail.com</p>
+				<h3>Privacy Information</h3>
+				<p>
+					By using our website, you hereby consent to our Privacy Policy and agree to its terms.<br>
+					The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.<br>
+					If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.
+				</p>
+			</div>
+
+			<div class="contactForm">
+				<h3>Contact us</h3>
+				<h5>Fill out the form bellow and we'll get back to you shortly.</h5>
+				<form class="formulaire" id="myForm">
+					<input type="text" class="inputs" name="name" placeholder="Name ..."> <br>
+					<input type="email" id="em" class="inputs" name="email" placeholder="Email ..." required> <br>
+					<input type="radio" id="re" id="1" name="reason">
+					<label for="1">Technical Issues</label><br>
+					<input type="radio" id="2" name="reason"> 
+					<label for="2">Refund</label><br>
+					<input type="radio" id="3" name="reason">
+					<label for="3">Recommandation</label>  <br>
+					<input type="radio" id="4" name="reason">
+					<label for="4">Other</label> <br>
+					<textarea placeholder="Message ..." rows="5" cols="50" class="inputs" required></textarea><br>
+					
+					<hr>
+				</form>
+				<button class="addCart" type="submit" onclick="contactsucc()">Send Message</button>
+			</div>
+		</div>
+	</div>
+	
+	<!-- footer -->
+	<div id="about" class="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="footer-col-1">
+					<h3>Download our App</h3>
+					<p>Download our App for Android and ios soon on</p> <br>
+					<img src="../images/playstore.png" alt="playsore" class="fotterImg">
+					<img src="../images/appstore.jpg" alt="appstore" class="fotterImg">
+				</div>
+
+				<div class="footer-col-2">
+					<a href="./index.html"><img src="../images/logo1.png" alt="Elbes E-commerce" class="logo1"></a>
+					<p>Our purpose is to provide affordable <br> and fashionnable clothes at the best prices</p>
+				</div>
+
+				<div class="footer-col-3">
+					<h3>Useful links</h3>
+					<ul>
+						<li>coupons <br> </li> 
+						<li>Blog Posts<br></li>
+						<li>Return Policy<br></li> 
+						<li> Subscripe to Newsletter</li>
+					</ul>
+				</div>
+
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook <br></li>
+						<li>Instagram <br></li>
+						<li>Twitter<br></li>
+						<li>Youtube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">-Copyright 2021- Elbes</p>
+		</div>
+	</div>
+
+</body>
+<script src="../JS/scripts.js"></script>
+</html>

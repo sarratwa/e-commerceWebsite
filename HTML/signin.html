@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Log in</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+	<!--Alert Box-->
+	<div class="login-container">
+		<div class="error" id="errCreating">
+			Account Cannot Be Created : Email Or Password Are Already In Use !
+		</div>
+	</div>
+
+	<div class="login-container">
+		<div class="error" id="errCreating2">
+			Account Cannot Be Created : Email And Password Are Required Fields !
+		</div>
+	</div>
+
+	<!--Sign In-->
+	<div class="wrapper">
+		<div class="createAccount">
+				<div class="t"> 
+					<b>Create An Account</b> 
+					<br>
+					<a href="./login.html" class="lo"><u> or log in </u></a>
+				</div>
+
+				<div>
+					<form id="creation">
+						<label for="name"> Username</label>
+						<input type="text" class="inputs user" id="name" name="name" placeholder="Name ..."> <br>
+						<label for="cityl"> City </label>
+						<input list="city" id="cityl" class="inputs">
+						<datalist id="city">
+							<option value="Marsa">
+							<option value="Ariena">
+							<option value="Charguia">
+							<option value="Cité Olympique">
+						  <option value="Tunis">
+						  <option value="Megrine">
+						  <option value="Rades">
+						  <option value="Ez-zahra">
+						  <option value="Bougarnine">
+						  <option value="Hamem-lif">
+						  <option value="Hamem-chat">
+						  <option value="Borj-Cedria">
+						  <option value="Riadh">
+						</datalist>   <br>
+						<label for="dateb"> Birthday </label>
+						<input type="Date" id="dateb" class="inputs" name="dateb"> <br>
+						<label for="e"> Email </label>
+						<input type="email" class="inputs email" name="email" placeholder="Email ..." required id="e"> <br>
+						<label for="p"> Password </label>
+						<input type="password" class="inputs pass" name="password" placeholder="Password ..." required id="p">
+						
+					</form>
+	
+					<button type="submit" onclick="create()"> Create Account </button>
+				</div>
+
+				<hr>
+				<!--Footer-->
+				<div class="accountFooter">
+					<ul>
+						<li>Conditions of Use</li>
+						<li>Privacy Notice</li>
+						<li>Help </li>
+					</ul>
+					<p class="copyright">-Copyright 2021- Elbes</p>
+				</div>
+			</div>
+		<div class="createASlide">
+			<div class="slideLogo"> 
+				<a href="./index.html"><b> Elbes </b></a>
+			</div>
+			<div class="slideTitle"> 
+				<b> Give Your Wardrobe A Make Over </b> <br>
+			</div>
+
+			<div>
+				Get Access to your Orders, Wishlist and Recommendations
+			</div>
+
+			<div>
+				<form>
+					<button type="submit" class="connection"> Connect Using Google </button> <br>
+					<button type="submit" class="connection"> Connect Using Facebook </button>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+</body>
+<script src="../JS/scripts.js"></script>
+</html>

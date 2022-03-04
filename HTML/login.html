@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Log in</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+
+	<!--Alert Box-->
+	<div class="login-container">
+		<div class="error" id="err">
+			Sign In Failed : Bad Email/Password Combo
+		</div>
+	</div>
+
+	<!-- Log In-->
+	<div class="login-container">
+		<div class="info" id="info">
+			<div class="t"> Log In </div>
+			<form id="signup">
+				<input type="email" class="inputs email" name="email" placeholder="Email ..." required> <br>
+				<input type="password" class="inputs pass" name="password" placeholder="Password ..." required> <br>
+				<input type="checkbox" id="signed" name="signed" value="signed">
+				<label for="signed"> Keep Me Logged-In </label><br>
+			</form>	
+			<button type="submit" class="inputs" onclick="connect()"> Connect <i class="fa fa-key" aria-hidden="true"></i> </button>
+			<div> <a href="#"> Forgot Password ? </a> </div> <br>
+		</div>
+	</div>
+
+
+	<div class="small-container"  id="logged">
+		<div class="Access-login">
+			<div> New ? </div>
+			<button class="createA" onclick="openCreateA()">Create an Account </button>
+		</div>
+	</div>
+
+	<hr>
+	<!--Footer-->
+	<div class="accountFooter">
+		<ul>
+			<li>Conditions of Use</li>
+			<li>Privacy Notice</li>
+			<li>Help </li>
+		</ul>
+		<p class="copyright">-Copyright 2021- Elbes</p>
+	</div>
+
+</body>
+<script src="../JS/scripts.js"></script>
+</html>

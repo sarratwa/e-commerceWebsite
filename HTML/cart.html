@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cart</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body onload="calculateT()">
+
+	<!--Alert Box-->
+	<div class="login-container">
+		<div class="success" id="successC">
+			Coupon Has Been Successfully Used : you Get 15% Off Your Current Purchase !
+		</div>
+	</div>
+
+	<!--Alert Box-->
+	<div class="login-container">
+		<div class="error" id="errCoupon">
+			Coupon Does Not Exist Or Has Already Been Used !
+		</div>
+	</div>
+
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<a href="./index.html"><img src="../images/logo.png" alt="Elbes E-commerce Logo" class="logo"></a>
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="./index.html">Home</a></li>
+						<li><a href="./products.html">Products</a></li>
+						<li><a href="./index.html#about">About</a></li>
+						<li><a href="./contact.html">Contact</a></li>
+						<li><a href="./login.html">Account</a></li>
+					</ul>
+				</nav>
+				<a href="#"><i class="fa fa-shopping-cart carty"></i></a>
+				<img src="../images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div id="cart-list-checkout"></div>
+			<h3 id="tobecleared3">CART</h3>
+			<div class="table-products">
+				<table>
+					<thead>
+						<tr>
+							<th>&nbsp;</th>
+							<th class="imageCart">&nbsp;</th>
+							<th>Product</th>
+							<th>Price</th>
+							<th>Quantity</th>
+							<th>Total</th>
+						</tr>
+					</thead>
+					
+					<tbody id="cart-list">
+						<tr>
+							<th class="counterCell"> </th>
+							<th class="imageCart">  <img src="../images/dress1.jpg" alt=""> </th>
+							<th>Summer Dress </th>
+							<th> <span id="priceP1"> 70.00TN </span></th>
+							<th> <input type="number" id="quantity1" name="quantity" class="inputs-coupons" step="1" min="1" value="1" onchange="findSubTotal(this.id ,'priceP1','subtotal1')"> </th>
+							<th> <span id="subtotal1"> 70 </span> </th>
+						</tr>
+						
+						<tr>
+							<th class="counterCell"> </th>
+							<th class="imageCart">  <img src="../images/skirt1.jpg" alt=""> </th>
+							<th>Cute Pink Skirt </th>
+							<th> <span id="priceP2"> 35.00TN </span></th>
+							<th> <input type="number" id="quantity2" name="quantity" class="inputs-coupons" step="1" min="1" value="1" onchange="findSubTotal(this.id ,'priceP2','subtotal2')"> </th>
+							<th> <span id="subtotal2"> 35 </span> </th>
+						</tr>
+
+					</tbody>
+				</table>
+
+				<table class="table-coupons" id="tobecleared2">
+					<tr>
+						<th colspan="2" class="coupon">
+							<input type="text" class="inputs-coupons" placeholder="Coupon code" id="couponCode">
+							<button class="inputs-coupons" onclick="applyC()"> Apply Coupon </button>
+						</th>
+						<th colspan="4" class="coupon">
+							<button class="inputs-coupons" onclick="clearCart()"> Clear Cart </button>
+						</th>
+					</tr>
+				</table>
+			</div>
+
+				<div class="checkout" id="tobecleared1">
+					<h3>CART TOTALS</h3>
+					<table>
+						<tr>
+							<td class="tableH">TVA</td>
+							<td>3.00 TDN</td>
+						</tr>
+						<tr>
+							<td class="tableH">Shipping</td>
+							<td>7.00 TDN </td>
+						</tr>
+						<tr>
+							<td class="tableH">Total</td>
+							<td id="total"></td>
+						</tr>
+					</table>
+					<button type="submit" class="inputs-coupons" onclick="proccedToCheckOut()">Proceed to Checkout</button>
+				</div>
+
+		</div>
+	</div>
+
+<!-- footer -->
+	<div id="about" class="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="footer-col-1">
+					<h3>Download our App</h3>
+					<p>Download our App for Android and ios soon on</p> <br>
+					<img src="../images/playstore.png" alt="playsore" class="fotterImg">
+					<img src="../images/appstore.jpg" alt="appstore" class="fotterImg">
+				</div>
+
+				<div class="footer-col-2">
+					<a href="./index.html"><img src="../images/logo1.png" alt="Elbes E-commerce" class="logo1"></a>
+					<p>Our purpose is to provide affordable <br> and fashionnable clothes at the best prices</p>
+				</div>
+
+				<div class="footer-col-3">
+					<h3>Useful links</h3>
+					<ul>
+						<li>coupons <br> </li> 
+						<li>Blog Posts<br></li>
+						<li>Return Policy<br></li> 
+						<li> Subscripe to Newsletter</li>
+					</ul>
+				</div>
+
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook <br></li>
+						<li>Instagram <br></li>
+						<li>Twitter<br></li>
+						<li>Youtube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">-Copyright 2021- Elbes</p>
+		</div>
+	</div>
+
+</body>
+<script src="../JS/scripts.js"></script>
+</html>

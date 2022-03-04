@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Elbes | Ecommerce Website design</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body onload="startTimer()">
+
+	<div class="header">
+		<div class="container">
+			<div class="navbar">
+				<a href="./index.html"><img src="../images/logo.png" alt="Elbes E-commerce" class="logo"></a>
+				<nav>
+					<ul id="MenuItems">
+						<li><a href="#">Home</a></li>
+						<li><a href="./products.html">Products</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="./contact.html">Contact</a></li>
+						<li><a href="./login.html">Account</a></li>
+					</ul>
+				</nav>
+				<a href="./cart.html" ><i class="fa fa-shopping-cart carty"></i></a>
+				<img src="../images/menu.png" alt="" class="menu-icon" onclick="menutoggle()"> 
+			</div>
+
+			<div class="row">
+				<div class="col-2">
+					<h1>Give Your Wardrobe <br> A Make Over!</h1>
+					<p>Unique and Affordable clothing specifically designed for you because <br> every day is a fashion show and the world is your runway.</p>
+					<a href="./products.html" class="btn">Explore Now &#8594;</a> <br>
+					<input type="text" id="myInput" onkeyup="search()" placeholder="Search for .."> &nbsp;
+					<i class="fa fa-search" aria-hidden="true"></i> 
+					<div class="spacedown"></div>
+				</div>
+				<div class="col-2">
+					<img id="img" class="slides" alt="Check Out Our Collection" src="../images/slides3.png">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Featured categories -->
+
+	<div class="categories">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-3">
+					<div class="img-wrap">
+						<a href="./products.html">
+							<img src="../images/categorie1.jpg" alt="Men">
+							<div class="caption"> Men </div>
+						</a>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="img-wrap">
+						<a href="./products.html">
+							<img src="../images/categorie2.jpg" alt="Women">
+							<div class="caption"> Women </div>
+						</a>
+					</div>
+				</div>
+				<div class="col-3">
+					<div class="img-wrap">
+						<a href="./products.html">
+							<img src="../images/categorie3.jpg" alt="Accessories">
+							<div class="caption"> Accessories </div>
+						</a>
+					</div>
+				</div>
+		</div>
+		</div>
+	</div>
+
+	<!-- Latest prroducts -->
+	<div class="small-container">
+		<h2 class="title">Latest Products</h2>
+		<div class="row" id="ouput_latest">
+		</div>
+		<div class="row">
+			<div class="col-4">
+				<a href="./products.html" class="btn">See all Products &#8594;</a>
+			</div>
+		</div>
+	</div>
+
+	<!-- exclusive prroducts -->
+	<h2 class="title">Exclusive Products</h2>
+
+	<div class="offer">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-2">
+					<img src="../images/offer.png" alt="Offer" class="offer-img">
+				</div>
+				<div class="col-2">
+					<p>Exclusively Available on Elbes</p>
+					<h1>SmartWatch Huawei</h1>
+					<small>Like a stylish splash of colours, HUAWEI Band 4 is available in Sakura Pink, Amber Sunrise and Graphite Black. The 2.5D colourful touch screen offers you with the stunning visual experience, engaging interface and smart message notification.</small> <br>
+					<a href="" class="btn">Buy Now &#8594;</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- brands -->
+	<div class="brands">
+		<div class="small-container">
+			<div class="row">
+				<div class="col-5">
+				<img src="../images/Adidas-logo.jpg" alt="Adidas">
+				</div>
+				<div class="col-5">
+					<img src="../images/h&m.png" alt="HM">
+				</div>
+				<div class="col-5">
+					<img src="../images/fatale.png" alt="Fatale">
+				</div>
+				<div class="col-5">
+					<img src="../images/nike.png" alt="Nike">
+				</div>
+				<div class="col-5">
+					<img src="../images/zara.jpg" alt="Zara">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- footer -->
+	<div id="about" class="footer">
+		<div class="container">
+			<div class="row">
+
+				<div class="footer-col-1">
+					<h3>Download our App</h3>
+					<p>Download our App for Android and ios soon on</p> <br>
+					<img src="../images/playstore.png" alt="playsore" class="fotterImg">
+					<img src="../images/appstore.jpg" alt="appstore" class="fotterImg">
+				</div>
+
+				<div class="footer-col-2">
+					<a href="./index.html"><img src="../images/logo1.png" alt="Elbes E-commerce" class="logo1"></a>
+					<p>Our purpose is to provide affordable <br> and fashionnable clothes at the best prices</p>
+				</div>
+
+				<div class="footer-col-3">
+					<h3>Useful links</h3>
+					<ul>
+						<li>coupons <br> </li> 
+						<li>Blog Posts<br></li>
+						<li>Return Policy<br></li> 
+						<li> Subscripe to Newsletter</li>
+					</ul>
+				</div>
+
+				<div class="footer-col-4">
+					<h3>Follow Us</h3>
+					<ul>
+						<li>Facebook <br></li>
+						<li>Instagram <br></li>
+						<li>Twitter<br></li>
+						<li>Youtube</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<p class="copyright">-Copyright 2021- Elbes</p>
+		</div>
+	</div>
+
+</body>
+<script src="../JS/scripts.js"></script>
+</html>
