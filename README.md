@@ -33,7 +33,7 @@ A general purpose e-commerce store with a responsive user interface and an admin
 - stats Page
 
 ## Technologies
-- Angular
-- NodeJS
-- ExpressJS
-- MongoDB
+- HTML
+- CSS
+- JS
+- PHP
